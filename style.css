@@ -8,6 +8,7 @@
 .bg-gradient{
     background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
 }
+/* nav */
 nav .menu{
     display: none;
 }
@@ -78,6 +79,29 @@ nav .menu{
     padding: 4px 0;
     text-align: center;
 }
+/* about */
+.about{
+    margin-top: 80px;
+    text-align: center;
+    padding: 80px 160px;
+}
+.about-cards{
+    display: grid;
+    justify-items: space-between;
+    gap: 80px;
+    grid-template-columns: repeat(4,1fr);
+}
+.ab-card{ 
+        width: 240px;
+        text-align: center;
+        font-weight: bold;
+        
+    }
+.ab-card h1{
+        color: #00FF88;
+        font-size: 48px;
+        margin-bottom: 16px;
+    }
 
 @media screen and (max-width: 576px){
 
@@ -93,6 +117,11 @@ nav .menu{
     .microphone{
         width: 47px;
     }
+    .badge{
+        top: 8px;
+        left: 190px;
+    }
+    /* nav */
     nav ul{
         display: none;
     }
@@ -101,5 +130,13 @@ nav .menu{
     }
     nav .menu{
         display: block;
+    }
+    /* about */
+    .about{
+        padding: 40px 20px;
+    }
+    .about-cards{
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
     }
 }
