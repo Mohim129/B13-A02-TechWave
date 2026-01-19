@@ -8,3 +8,98 @@
 .bg-gradient{
     background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
 }
+nav .menu{
+    display: none;
+}
+
+/* banner */
+
+#banner{
+    
+    /* width: 100%; */
+    /* padding-top: 50px;
+    padding-bottom: 100px; */
+    background: url(./assets/hero-bg.png) center no-repeat;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* .banner-pain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.banner-center{
+    width: 350px;
+    height: 350px;
+    /* max-width: 370px; */
+    /* border: 2px solid #3debc0; */
+    /* width: 100%; */
+    position: relative;
+    
+    /* display: flex;
+    /* justify-content: center;
+    align-items: center; */ 
+
+    /* border: 2px solid #eb3d3d; */
+    /* padding-top: 20px; */
+    
+}
+.hero-circle{
+    /* position: absolute; */
+    /* margin-left: 5px; */
+    width: 100%;
+}
+.microphone{
+    /* position: relative ;
+    top: 35%;
+    margin: 0 auto; */
+    width: 116px;
+    /* height: auto; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.badge{
+    position: absolute;
+    top: 12px;
+    left: 254px;
+    background-color: #00FF88;
+    color: #1A0B2E;
+    font-weight: 600;
+    border-radius: 16px;
+    width: 56px;
+    padding: 4px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 576px){
+
+    /* banner */
+    #banner{
+        background-size: cover;
+        padding: 40px 20px;
+    }
+    .banner-center{
+        width: 260px;
+        height: 260px;
+    }
+    .microphone{
+        width: 47px;
+    }
+    nav ul{
+        display: none;
+    }
+    nav .sub-btn{
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+}
