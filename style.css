@@ -1,0 +1,10 @@
+/* font  */
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* shared styles  */
+.bg-gradient{
+    background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
+}
