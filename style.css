@@ -139,4 +139,15 @@ nav .menu{
     grid-template-columns: repeat(2,1fr);
     gap: 40px;
     }
+    .ab-card{ 
+        width: 180px;
+        text-align: center;
+        font-weight: bold;
+        
+    }
+    .ab-card h1{
+        color: #00FF88;
+        font-size: 40px;
+        margin-bottom: 16px;
+    }
 }
