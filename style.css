@@ -85,6 +85,11 @@ nav .menu{
     text-align: center;
     padding: 80px 160px;
 }
+.about-content h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
 .about-cards{
     display: grid;
     justify-items: space-between;
@@ -135,12 +140,16 @@ nav .menu{
     .about{
         padding: 40px 20px;
     }
+    .about-content h1{
+        font-size: 32px;
+        width: 90%;
+    }
     .about-cards{
-    grid-template-columns: repeat(2,1fr);
-    gap: 40px;
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
     }
     .ab-card{ 
-        width: 180px;
+        width: 170px;
         text-align: center;
         font-weight: bold;
         
