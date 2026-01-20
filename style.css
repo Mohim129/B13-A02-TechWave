@@ -12,6 +12,9 @@
     font-size: 3rem;
     font-weight: bold;
 }
+.p-text{
+    color: #8490a1;
+}
 
 @keyframes beat {
   0% {
@@ -204,6 +207,7 @@ nav .menu{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 120px;
 }
 .host-profile{
     display: flex;
@@ -231,8 +235,31 @@ nav .menu{
     border: 1px solid #533C72;
     border-radius: 50%;
 }
- 
-
+ /* Footer  */
+footer{
+    background: url(./assets/footer-bg.png) center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 120px;
+ }
+footer h1{
+    font-size: 3.75rem;
+}
+.footer-icons{
+    display: grid;
+    /* gap: 2rem; */
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer-icons p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
 /* medium device styles */
 @media screen and (min-width: 576px) and (max-width: 992px){
 
@@ -265,6 +292,28 @@ nav .menu{
     .featured-episodes{
         flex-direction: column;
         gap: 20px ;
+    }
+    /* Host */
+    .host-profile{
+        width: 90%;
+        flex-direction: column;
+        border-radius: 24px;
+    }
+    .host-info{
+        text-align: center;
+    }
+    .host-info p{
+        margin-bottom: 1.5rem;
+    }
+    .host-icons{
+        justify-content: center;
+    }
+    /* footer */
+    .footer-icons{
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        
     }
 }
 
@@ -352,6 +401,7 @@ nav .menu{
     /* why us  */
     .why-us{
         padding: 40px 20px;
+        /* margin-bottom: 60px; */
     }
     .why-us-cards{
         grid-template-areas:
@@ -374,12 +424,15 @@ nav .menu{
         gap: 20px ;
     }
     /* host  */
+    .host{
+        margin-bottom: 40px;
+    }
     .host-profile{
         width: 90%;
         flex-direction: column;
         padding: 24px;
         margin-top: 1.5rem;
-        border-radius: 16px;
+        border-radius: 16px;    
     }
     .host-profile h2{
         font-size: 1.5rem;
@@ -403,5 +456,22 @@ nav .menu{
     }
     .icon img{
         width: 20px;
+    }
+
+    /* footer */
+     footer{
+        background: url(./assets/footer-bg-small.png) center no-repeat;
+        background-size: cover;
+        padding: 40px 20px;
+    }
+    footer h1{
+        font-size: 2rem;
+        gap: 1.5rem;
+    }
+    .footer-icons{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        
     }
 }
