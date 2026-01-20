@@ -474,4 +474,7 @@ footer h1{
         grid-template-columns: repeat(2, 1fr);
         
     }
+    .copyright{
+        font-size: 14px;
+    }
 }
