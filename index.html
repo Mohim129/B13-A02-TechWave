@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body class="inter bg-[#1A0B2E] text-white">
     <header>
@@ -19,7 +20,7 @@
                 <li><a href="">Episodes</a></li>
                 <li><a href="">Host</a></li>
             </ul>
-            <button class=" sub-btn bg-gradient px-4 py-3 rounded-3xl">Subscribe</button>
+            <button class=" sub-btn bg-gradient px-4 py-3 rounded-3xl flex gap-1">Subscribe <img src="./assets/arrow_forward.png" alt=""></button>
             <button class="menu"><img src="./assets/hamburger-menu.png" alt=""></button>
         </nav>
         <section id="banner" class="py-[100px]">
@@ -63,7 +64,7 @@
                     <p>Episodes Published</p>
                 </div>
                 <div class="ab-card">
-                    <h1>4.9</h1>
+                    <h1 class="">4.9&#9733;</h1>
                     <p>Average Rating</p>
                 </div>
                 <div class="ab-card">
@@ -91,7 +92,8 @@
                     <p>Connect with tech enthusiasts from over 120 countries worldwide.</p>
                 </div>
                 <div class="why-card card-4">
-                    <img src="./assets/.png" alt="">
+                    <i class="fa-solid fa-bolt text-5xl font-extrabold bg-gradient-to-br from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent"></i>
+
                     <h2>Exclusive Interviews</h2>
                     <p>Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
                 </div>
@@ -103,7 +105,48 @@
             </div>
         </section>
         <section class="featured">
-
+            <h1>Featured Episodes</h1>
+            <div class="featured-episodes flex">
+                <div class="ep-card">
+                    <div class="frame">
+                        <iframe width="380" height="215" src="https://www.youtube.com/embed/tlQJ6dcKdSU?si=I5WY78kUqdHmSV1y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="background-color: transparent;"></iframe>
+                    </div>
+                    <div class="ep-card-content">
+                        <h2>The Future of AI in Everyday Life</h2>
+                        <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                        <div class="duration flex items-center text-[#00FF88] gap-2">
+                            <img src="./assets/clock.png" alt="">
+                            <span>19 min</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-card">
+                    <div class="frame">
+                        <iframe width="380" height="215" src="https://www.youtube.com/embed/iWuEpnTTD3k?si=EBY03fvTZUlz-4eh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="ep-card-content">
+                        <h2>Building Better Habits for Remote Work</h2>
+                        <p>Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
+                        <div class="duration flex items-center text-[#00FF88] gap-2">
+                            <img src="./assets/clock.png" alt="">
+                            <span>14 min</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ep-card">
+                    <div class="frame">
+                        <iframe width="380" height="215" src="https://www.youtube.com/embed/tlQJ6dcKdSU?si=I5WY78kUqdHmSV1y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="background-color: transparent;"></iframe>
+                    </div>
+                    <div class="ep-card-content">
+                        <h2>Career Growth in Tech: A Roadmap</h2>
+                        <p>Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
+                        <div class="duration flex items-center text-[#00FF88] gap-2">
+                            <img src="./assets/clock.png" alt="">
+                            <span>19 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="host">
 

@@ -169,9 +169,50 @@ nav .menu{
 .card-5{
     grid-area: card5;
 }
+/* Featured Episodes */
+.featured{
+    padding: 7.5rem 12.5rem;
+    margin-bottom: 120px;
+    
+}
+.featured h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+.featured-episodes{
+    display: flex;
+    gap: 30px ;
+}
+.ep-card{
+    background-color: rgba(53, 17, 101, 0.4);
+    /* padding: 2.5rem; */
+    border-radius: 16px;
+}
+.ep-card .frame{
+    width: 100%;
+}
+.frame iframe{
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+.ep-card-content{
+    padding: 1.5rem;
+}
+.ep-card h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.ep-card p{
+    font-size: 1rem;
+}
+.duration{
+    margin-top: 1rem;
+}
 
 /* medium device styles */
-@media screen and (min-width: 576px) and (max-width: 968px){
+@media screen and (min-width: 576px) and (max-width: 992px){
 
     /* about us */
     .about{
@@ -193,7 +234,17 @@ nav .menu{
         "card3 card4"
         "card5 card5";
     }
+    /* featured episodes */
+    .featured{
+        padding: 4.5rem 8.5rem;
+        margin-bottom: 80px;
+    }
+    .featured-episodes{
+        flex-direction: column;
+        gap: 20px ;
+    }
 }
+
 
 /* small device styles */
 @media screen and (max-width: 576px){
@@ -270,5 +321,14 @@ nav .menu{
     }
     .why-card{
         padding: 1.5rem;
+    }
+        /* featured episodes */
+    .featured{
+        padding: 40px 20px;
+        margin-bottom: 60px;
+    }
+    .featured-episodes{
+        flex-direction: column;
+        gap: 20px ;
     }
 }
