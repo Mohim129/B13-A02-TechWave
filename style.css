@@ -98,16 +98,16 @@ nav .menu{
     grid-template-columns: repeat(4,1fr);
 }
 .ab-card{ 
-        width: 240px;
-        text-align: center;
-        font-weight: bold;
+    width: 240px;
+    text-align: center;
+    font-weight: bold;
         
-    }
+}
 .ab-card h1{
-        color: #00FF88;
-        font-size: 48px;
-        margin-bottom: 16px;
-    }
+    color: #00FF88;
+    font-size: 48px;
+    margin-bottom: 16px;
+}
 /* why us */
 .why-us{
     padding: 7.5rem 12.5rem;
@@ -170,7 +170,32 @@ nav .menu{
     grid-area: card5;
 }
 
+/* medium device styles */
+@media screen and (min-width: 576px) and (max-width: 968px){
 
+    /* about us */
+    .about{
+    margin-top: 5rem;
+    text-align: center;
+    padding: 3rem 5rem;
+}
+    .about-cards{
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+    }
+    /* why us */
+    .why-us{
+        padding: 4.5rem;
+    }
+    .why-us-cards{
+        grid-template-areas:
+        "card1 card2"
+        "card3 card4"
+        "card5 card5";
+    }
+}
+
+/* small device styles */
 @media screen and (max-width: 576px){
 
     /* banner */
