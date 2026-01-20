@@ -8,6 +8,23 @@
 .bg-gradient{
     background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
 }
+.title-text{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(0.95); 
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* nav */
 nav .menu{
     display: none;
@@ -16,52 +33,24 @@ nav .menu{
 /* banner */
 
 #banner{
-    
-    /* width: 100%; */
-    /* padding-top: 50px;
-    padding-bottom: 100px; */
     background: url(./assets/hero-bg.png) center no-repeat;
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-/* .banner-pain{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 .banner-center{
+    animation: beat 1s infinite;
     width: 350px;
     height: 350px;
-    /* max-width: 370px; */
-    /* border: 2px solid #3debc0; */
-    /* width: 100%; */
     position: relative;
-    
-    /* display: flex;
-    /* justify-content: center;
-    align-items: center; */ 
-
-    /* border: 2px solid #eb3d3d; */
-    /* padding-top: 20px; */
-    
 }
 .hero-circle{
-    /* position: absolute; */
-    /* margin-left: 5px; */
     width: 100%;
+
 }
 .microphone{
-    /* position: relative ;
-    top: 35%;
-    margin: 0 auto; */
     width: 116px;
-    /* height: auto; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -79,6 +68,17 @@ nav .menu{
     padding: 4px 0;
     text-align: center;
 }
+.buttons{
+	    gap: 24px
+}
+.btn-1{
+    width:210px;
+	padding: 12px 20px;
+}
+.btn-2{
+	width:147px;
+	padding: 12px 16px;
+}
 /* about */
 .about{
     margin-top: 5rem;
@@ -86,8 +86,6 @@ nav .menu{
     padding: 5rem 10rem;
 }
 .about-content h1{
-    font-size: 2.5rem;
-    font-weight: 700;
     margin-bottom: 1rem;
 }
 .about-cards{
@@ -98,14 +96,13 @@ nav .menu{
     grid-template-columns: repeat(4,1fr);
 }
 .ab-card{ 
-    width: 240px;
     text-align: center;
     font-weight: bold;
         
 }
 .ab-card h1{
     color: #00FF88;
-    font-size: 48px;
+    font-size: 3rem;
     margin-bottom: 16px;
 }
 /* why us */
@@ -115,22 +112,17 @@ nav .menu{
 }
 .why-us h1{
     text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
     margin-bottom: 2.5rem;
 }
 .why-us-cards{
     display: grid;
-    /* grid-template-columns: repeat(3,1fr); */
     gap: 40px;
-    /* grid-template-columns: repeat(3,1fr); */
     grid-template-areas:
     "card1 card2 card2"
     "card1 card3 card3"
     "card4 card4 card5";
 }
 .why-card{
-    /* text-align: center; */
     background-color: rgba(53, 17, 101, 0.4);
     padding: 2.5rem;
     display: flex;
@@ -139,7 +131,6 @@ nav .menu{
     border-radius: 24px;
 }
 .why-card img{
-    /* width: 100%; */
     width: 55px;
 }
 .why-card h2{
@@ -177,8 +168,6 @@ nav .menu{
 }
 .featured h1{
     text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
     margin-bottom: 2.5rem;
 }
 .featured-episodes{
@@ -187,7 +176,6 @@ nav .menu{
 }
 .ep-card{
     background-color: rgba(53, 17, 101, 0.4);
-    /* padding: 2.5rem; */
     border-radius: 16px;
 }
 .ep-card .frame{
@@ -210,25 +198,60 @@ nav .menu{
 .duration{
     margin-top: 1rem;
 }
+/* Host  */
+.host{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.host-profile{
+    display: flex;
+    width: 75%;
+    align-items: center;
+    gap: 24px;
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+    margin-top: 2.5rem;
+    border-radius: 40px;
+}
+.host-profile h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.host-profile p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+.host-icons .icon{
+    padding: 20px;
+    border: 1px solid #533C72;
+    border-radius: 50%;
+}
+ 
 
 /* medium device styles */
 @media screen and (min-width: 576px) and (max-width: 992px){
 
     /* about us */
     .about{
-    margin-top: 5rem;
-    text-align: center;
-    padding: 3rem 5rem;
-}
+        margin-top: 5rem;
+        text-align: center;
+        padding: 3rem 5rem;
+    }
     .about-cards{
         grid-template-columns: repeat(2,1fr);
         gap: 40px;
     }
     /* why us */
     .why-us{
-        padding: 4.5rem;
+        padding: 3rem;
     }
     .why-us-cards{
+        padding: 40px 20px;
         grid-template-areas:
         "card1 card2"
         "card3 card4"
@@ -248,9 +271,25 @@ nav .menu{
 
 /* small device styles */
 @media screen and (max-width: 576px){
+    .title-text{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .buttons{
+	    gap: 8px
+    }
+    .btn-1{
+        width:190px;
+	    padding: 8px 12px;
+    }
+    .btn-2{
+	    width:137px;
+	    padding: 8px 12px;
+    }
 
     /* banner */
     #banner{
+        background: url(./assets/bg-small.png) center no-repeat;
         background-size: cover;
         padding: 40px 20px;
     }
@@ -280,7 +319,11 @@ nav .menu{
     }
     /* about */
     .about{
-        padding: 40px 20px;
+        padding: 40px 0px;
+    }
+    .about-content p{
+        padding: 0px 20px;
+        font-size: 14px;
     }
     .about-content h1{
         font-size: 32px;
@@ -294,18 +337,17 @@ nav .menu{
         gap: 40px;
     }
     .ab-card{ 
-        width: 170px;
         text-align: center;
         font-weight: bold;
         
     }
     .ab-card h1{
         color: #00FF88;
-        font-size: 40px;
+        font-size: 2.5rem;
         margin-bottom: 16px;
     }
     .ab-card p{
-        /* font-size: 14px; */
+        font-size: 14px;
     }
     /* why us  */
     .why-us{
@@ -322,7 +364,7 @@ nav .menu{
     .why-card{
         padding: 1.5rem;
     }
-        /* featured episodes */
+    /* featured episodes */
     .featured{
         padding: 40px 20px;
         margin-bottom: 60px;
@@ -330,5 +372,36 @@ nav .menu{
     .featured-episodes{
         flex-direction: column;
         gap: 20px ;
+    }
+    /* host  */
+    .host-profile{
+        width: 90%;
+        flex-direction: column;
+        padding: 24px;
+        margin-top: 1.5rem;
+        border-radius: 16px;
+    }
+    .host-profile h2{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    .host-profile img{
+        width: 150px;
+    }
+    .host-info{
+        text-align: center;
+    }
+    .host-icons{
+        justify-content: center;
+        gap: 8px;
+    }
+    .host-icons .icon{
+        border: 1px solid #533C72;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    .icon img{
+        width: 20px;
     }
 }
