@@ -81,18 +81,19 @@ nav .menu{
 }
 /* about */
 .about{
-    margin-top: 80px;
+    margin-top: 5rem;
     text-align: center;
-    padding: 80px 160px;
+    padding: 5rem 10rem;
 }
 .about-content h1{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 .about-cards{
     display: grid;
     justify-items: space-between;
+    margin: 0 auto;
     gap: 80px;
     grid-template-columns: repeat(4,1fr);
 }
@@ -107,6 +108,68 @@ nav .menu{
         font-size: 48px;
         margin-bottom: 16px;
     }
+/* why us */
+.why-us{
+    padding: 7.5rem 12.5rem;
+    background-color: #230E3D;
+}
+.why-us h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+.why-us-cards{
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr); */
+    gap: 40px;
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-areas:
+    "card1 card2 card2"
+    "card1 card3 card3"
+    "card4 card4 card5";
+}
+.why-card{
+    /* text-align: center; */
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 24px;
+}
+.why-card img{
+    /* width: 100%; */
+    width: 55px;
+}
+.why-card h2{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.why-card p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.card-1{
+    grid-area: card1;
+}
+.card-2{
+    grid-area: card2;
+}
+.card-2 img{
+    width: 40px;
+}
+.card-3{
+    grid-area: card3;
+}
+.card-4{
+    grid-area: card4;
+}
+.card-5{
+    grid-area: card5;
+}
+
 
 @media screen and (max-width: 576px){
 
@@ -120,13 +183,16 @@ nav .menu{
         height: 260px;
     }
     .microphone{
-        width: 47px;
+        width: 3rem;
     }
     .badge{
         top: 8px;
         left: 190px;
     }
     /* nav */
+    nav h1{
+        font-size: 2rem;
+    }
     nav ul{
         display: none;
     }
@@ -144,6 +210,9 @@ nav .menu{
         font-size: 32px;
         width: 90%;
     }
+    .about-content .break{
+        display: none;
+    }
     .about-cards{
         grid-template-columns: repeat(2,1fr);
         gap: 40px;
@@ -158,5 +227,23 @@ nav .menu{
         color: #00FF88;
         font-size: 40px;
         margin-bottom: 16px;
+    }
+    .ab-card p{
+        /* font-size: 14px; */
+    }
+    /* why us  */
+    .why-us{
+        padding: 40px 20px;
+    }
+    .why-us-cards{
+        grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5";
+    }
+    .why-card{
+        padding: 1.5rem;
     }
 }
